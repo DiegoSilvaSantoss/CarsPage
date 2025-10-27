@@ -277,14 +277,109 @@ section {
     }
 }
 
-
-@media only screen and (max-width:720px) {
+@media (max-width: 1024px) {
     header {
-        width: 90vw;
-        
+        width: 95vw;
+    }
 
-        & img {
-            width: 200px;
-        }
+    section .list .item .content h2 {
+        font-size: 3em;
+    }
+
+    section .list .item .content .description {
+        font-size: 14px;
+    }
+
+    .arrows {
+        width: 90vw;
+    }
+}
+
+/* Celulares (largura até 768px) */
+@media only screen and (max-width: 768px) {
+    header {
+        flex-direction: column;
+        gap: 10px;
+    }
+
+    header img {
+        width: 140px;
+    }
+
+    header nav ul {
+        gap: 15px;
+    }
+
+    section .list {
+        width: 90vw;
+    }
+
+    section .list .item {
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        text-align: center;
+    }
+
+    section .list .item .car-img {
+        width: 80%;
+    }
+
+    section .list .item .car-img img {
+        transform: rotate(-15deg);
+    }
+
+    section .list .item .content {
+        width: 100%;
+        align-items: center;
+        text-align: center;
+    }
+
+    section .list .item .content h2 {
+        font-size: 2.5em;
+    }
+
+    section .list .item .content .description {
+        font-size: 13px;
+        text-align: center;
+        max-width: 90%;
+    }
+
+    .arrows {
+        top: auto;
+        bottom: 100px;
+        width: 60vw;
+    }
+
+    .indicators {
+        bottom: 20px;
+    }
+}
+
+/* Celulares pequenos (até 480px) */
+@media only screen and (max-width: 480px) {
+    header img {
+        width: 120px;
+    }
+
+    header nav ul li {
+        font-size: 14px;
+    }
+
+    section .list .item .content h2 {
+        font-size: 2em;
+    }
+
+    section .list .item .content .description {
+        font-size: 12px;
+    }
+
+    .arrows button {
+        width: 40px;
+        height: 40px;
+    }
+
+    .indicators .number {
+        font-size: 2.5em;
     }
 }
