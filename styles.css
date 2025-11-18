@@ -78,7 +78,7 @@ section .list .item .car-img img {
     transform: rotate(-30deg);
 }
 
-section .list .item .car-img img::before {
+section .list .item .car-img::before {
     content: '';
     position: absolute;
     background-color: #000;
