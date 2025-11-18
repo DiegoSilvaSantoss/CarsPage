@@ -62,7 +62,7 @@ section .list .item::before {
     position: absolute;
     height: 200px;
     width: 100%;
-    top: 40%;
+    top: 50%;
     border-top: 1px solid #fff;
 }
 
@@ -289,6 +289,12 @@ h2,
 
     header nav ul li {
         cursor: pointer;
+    }
+
+    section .list .item::before {
+        content: '';
+        position: absolute;
+        top: 40%;
     }
 
     section .list .item .car-img {
