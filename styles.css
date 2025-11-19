@@ -130,6 +130,11 @@ section .list .item .car-img::before {
     cursor: pointer;
     font-weight: bold;
     font-family: "League Gothic", sans-serif;
+    transition: 0.5s ease;
+}
+
+.content .information:hover {
+    background-color: #beff1b;
 }
 
 .arrows {
@@ -149,13 +154,21 @@ section .list .item .car-img::before {
     border-radius: 50%;
     border: none;
     cursor: pointer;
+    transition: 0.5s ease;
 }
 
 .arrows button img {
     width: 30px;
     margin-top: 4px;
     cursor: pointer;
+    transition: 0.5s ease;
 }
+
+.arrows button:hover img {
+    filter: brightness(0) invert(1);
+}
+
+
 
 .arrows button:hover {
     background-color: #beff1b;
